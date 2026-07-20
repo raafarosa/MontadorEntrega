@@ -1,0 +1,164 @@
+:root { 
+    color-scheme: dark; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #0a0a0a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+    border: 1px solid #1a1a1a;
+}
+
+h2 { 
+    color: #3b82f6; 
+    margin-top: 0; 
+}
+
+h3 { 
+    color: #3b82f6; 
+    margin-top: 35px; 
+    border-bottom: 1px solid #1a1a1a; 
+    padding-bottom: 8px; 
+}
+
+.form-group { 
+    margin-bottom: 20px; 
+}
+
+label { 
+    display: block; 
+    font-weight: bold; 
+    margin-bottom: 8px; 
+    color: #a3a3a3; 
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #121212;
+    border: 1px solid #2d2d2d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #fff;
+}
+
+input[type="text"]:focus, textarea:focus { 
+    outline: none; 
+    border-color: #3b82f6; 
+}
+
+textarea { 
+    height: 200px; 
+    resize: vertical; 
+    font-family: monospace; 
+}
+
+button {
+    background-color: #10b981;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover { 
+    background-color: #059669; 
+}
+
+.result-box {
+    margin-top: 15px;
+    background: #121212;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #2d2d2d;
+    border-left: 5px solid #3b82f6;
+    white-space: pre-wrap;
+    font-family: Calibri, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.btn-copy { 
+    background-color: #3b82f6; 
+    margin-top: 15px; 
+}
+
+.btn-copy:hover { 
+    background-color: #2563eb; 
+}
+
+/* Estilos da Tabela de Conferência */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+    border: 1px solid #2d2d2d;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    text-align: left;
+    background-color: #0c0c0c;
+}
+
+th {
+    background-color: #161616;
+    color: #3b82f6;
+    padding: 10px 12px;
+    font-weight: 600;
+    border-bottom: 2px solid #2d2d2d;
+    white-space: nowrap;
+}
+
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #1a1a1a;
+    color: #d4d4d4;
+    vertical-align: middle;
+    transition: background-color 0.2s ease;
+}
+
+tr:hover td {
+    background-color: #121212;
+}
+
+/* Linha marcada - Verde Pastel */
+tr.linha-checada td {
+    background-color: rgba(16, 185, 129, 0.15) !important;
+    color: #a7f3d0;
+}
+
+.badge-tipo {
+    background-color: #1e293b;
+    color: #38bdf8;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.chk-status {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #10b981;
+}

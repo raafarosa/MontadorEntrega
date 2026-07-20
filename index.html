@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montador de Entregas - Edição Premium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Montador de E-mail de Entrega</h2>
+
+        <div class="form-group">
+            <label for="nomePacote">Nome do Pacote ZIP:</label>
+            <input type="text" id="nomePacote" placeholder="Ex: BNPPARIBA_574551_07072026.zip">
+        </div>
+
+        <div class="form-group">
+            <label for="infoPersonalizada">Informação Personalizada (Completa o texto "que contempla a..."):</label>
+            <input type="text" id="infoPersonalizada" value="disponibilização de aplicações alfanumérico" placeholder="Ex: disponibilização de aplicações alfanumérico">
+        </div>
+
+        <div class="form-group">
+            <label for="textoBruto">Cole aqui a bagunça dos Executáveis (Pequenas ou Grandes entregas):</label>
+            <textarea id="textoBruto" placeholder="Cole todo o conteúdo aqui..."></textarea>
+        </div>
+
+        <button id="btnGerar" type="button">Gerar E-mail e Tabela</button>
+
+        <div id="resultadoContainer" style="display:none;">
+            <h3>E-mail Formatado</h3>
+            <div id="resultado" class="result-box"></div>
+            <button id="btnCopiar" class="btn-copy" type="button">Copiar Texto do E-mail</button>
+
+            <h3>Tabela de Conferência (Igual ao PDF original)</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cli.</th>
+                            <th>Sist.</th>
+                            <th>Inst.</th>
+                            <th>Executável / WebSite / Arquivo Local</th>
+                            <th>Tipo</th>
+                            <th>Versão</th>
+                            <th>Release</th>
+                            <th>Plataforma</th>
+                            <th>Dt. Atualiz</th>
+                            <th style="text-align: center;">OK</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabela">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
